@@ -58,11 +58,11 @@ const Features = () => {
                                 </p>
                             </div>
                             <div className="flex-1 flex-center">
-                                <p>iphone 15 Pro is {''}
+                                <p>Titanium has one of the bst strength-to-weight ratios of any metal, making these our {''}
                                     <span className='text-white'>
-                                        the first iPhone to feature an aerospace-grade titanium design
+                                        lightest Pro models ever.
                                     </span>,
-                                    using the same alloy that spacecrafts use for mission to Mars.
+                                    You'll notice the difference the moment you pick one up.
                                 </p>
                             </div>
                         </div>
