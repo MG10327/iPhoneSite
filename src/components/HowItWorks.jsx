@@ -81,20 +81,20 @@ const HowItWorks = () => {
                 best graphic performance by far.
               </span>
             </p>
+            <p className="hiw-text g_text">
+              Mobile {""}
+              <span className="text-white">
+                games will look and feel so immersive.
+              </span>
+              , with incredibly detailed environments and characters.
+            </p>
           </div>
-          <p className="hiw-text g_text">
-            Mobile {""}
-            <span className="text-white">
-              games will look and feel so immersive.
-            </span>
-            , with incredibly detailed environments and characters.
-          </p>
-        </div>
 
-        <div className="flex-1 flex justify-center flex-col g_fadeIn">
-          <p className="hiw-text">New</p>
-          <p className="hiw-bigtext">Pro-class GPU</p>
-          <p className="hiw-text">with 6 cores</p>
+          <div className="flex-1 flex justify-center flex-col ">
+            <p className="hiw-text">New</p>
+            <p className="hiw-bigtext">Pro-class GPU</p>
+            <p className="hiw-text">with 6 cores</p>
+          </div>
         </div>
       </div>
     </section>
