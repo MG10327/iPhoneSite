@@ -35,14 +35,14 @@ const Features = () => {
     <section className='h-full common-padding bg-zinc relative overflow-hidden'>
         <div className="screen-max-width">
             <div className="mg-12 w-full">
-                <h1 className='section-heading' id="features_title">Explore the ful story.</h1>
+                <h1 className='section-heading' id="features_title">Explore the full story.</h1>
             </div>
         </div>
 
         <div className="flex flex-col justify-center items-center overflow-hidden">
             <div className="mt-32 mb-24 pl-24">
                 <h2 className='text-5xl lg:text-7xl font-semibold'>iPhone.</h2>
-                <h2 className='text-5xl lg:text-7xl font-semibold'>Forged in titanium.</h2>
+                <h2 className='text-5xl lg:text-7xl font-semibold mb-24'>Forged in titanium.</h2>
 
                 <div className="flex-center flex-col sm:px-10">
                     <div className="relative h-[50vh] w-full flex item-center">
