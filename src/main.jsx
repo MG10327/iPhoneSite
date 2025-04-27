@@ -6,25 +6,22 @@ import './index.css'
 import * as Sentry from "@sentry/react";
 
 Sentry.init({
-  dsn: "https://aa6fea54b64c173de55a4b2eb8ee6323@o4508257558724608.ingest.us.sentry.io/4508257561739264",
+  dsn: "https://be36eae78ff1cf337210fc665d721c14@o4508257558724608.ingest.us.sentry.io/4509225135767552",
+  // Setting this option to true will send default PII data to Sentry.
+  // For example, automatic IP address collection on events
+  release: "my-app-name@1.0.0", // <--- Version tracking
+  sendDefaultPii: true,
   integrations: [
     Sentry.browserTracingIntegration(),
-    Sentry.reactRouterV6BrowserTracingIntegration({
-      useEffect: React.useEffect,
-    }),
-    Sentry.replayIntegration({
-      maskAllText: false,
-      blockAllMedia: false
-    }),
-
+    Sentry.replayIntegration()
   ],
   // Tracing
   tracesSampleRate: 1.0, //  Capture 100% of the transactions
   // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-  tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
+  tracePropagationTargets: ["localhost:5173", "https://i-phone-15-three.vercel.app/" ], // the api and staging link would go here if there was one.
   // Session Replay
-  replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-  replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
+  replaysSessionSampleRate: 1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
+  replaysOnErrorSampleRate: 1.0 // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
 });
 
 
