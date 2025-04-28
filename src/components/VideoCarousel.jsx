@@ -222,7 +222,7 @@ const VideoCarousel = () => {
                 ? () => handleProcess("video-reset")
                 : !isPlaying
                 ? () => handleProcess("play")
-                : () => handleProcess("jnkjnkjn")
+                : () => handleProcess("pause")
             }
           />
         </button>
