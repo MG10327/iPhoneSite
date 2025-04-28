@@ -9,7 +9,7 @@ Sentry.init({
   dsn: "https://be36eae78ff1cf337210fc665d721c14@o4508257558724608.ingest.us.sentry.io/4509225135767552",
   // Setting this option to true will send default PII data to Sentry.
   // For example, automatic IP address collection on events
-  release: "my-app-name@1.0.0", // <--- Version tracking
+  release: "iphone-site@1.0.0", // <--- Version tracking
   sendDefaultPii: true,
   integrations: [
     Sentry.browserTracingIntegration(),
