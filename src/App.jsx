@@ -9,8 +9,6 @@ import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
 
 const App = () => {
-  Sentry.captureException(new Error("Test Error"));
-
   return (
     <main className='bg-black'>
       <Navbar></Navbar>
