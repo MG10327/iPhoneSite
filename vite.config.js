@@ -8,9 +8,9 @@ export default defineConfig({
     react(),
     // Put the Sentry vite plugin after all other plugins
     sentryVitePlugin({
-      authToken: process.env.SENTRY_AUTH_TOKEN,
-      org: "no-kwt",
-      project: "iphone-site",
+      authToken: process.env.VITE_SENTRY_AUTH_TOKEN,
+      org: process.env.VITE_SENTRY_ORG,
+      project: process.env.VITE_SENTRY_PROJECT,
     }), ],
   build: {
     sourcemap: true
